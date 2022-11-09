@@ -1,7 +1,7 @@
-﻿using System.Data;
+using System.Data;
+using System;
+using System.ComponentModel.Design;
 
-
-string ewednevnik;
 
 
 namespace ewednevnik
@@ -14,9 +14,12 @@ namespace ewednevnik
 
         static void Main(string[] args)
         {
+            Console.WriteLine( "ДЛЯ ЗАПУСКА ПРОГРАММЫ НАЖМИТЕ ПРОБЕЛ");
             data1();
+            data2();
+            data3();
         }
-        static void data1()
+       public static void data1()
         {
             Ewednevnik ewednevnik = new Ewednevnik();
             ewednevnik.Name = "Сходить на пары";
@@ -26,13 +29,13 @@ namespace ewednevnik
             Ewednevnik ewednevnik2 = new Ewednevnik();
             ewednevnik2.Name = "Сходить в книжный";
             ewednevnik2.Description = "Купить книгу";
-            ewednevnik2.Date = new DateTime(2022, 11, 04);
+            ewednevnik2.Date = new DateTime(2022, 11, 09);
 
             Ewednevnik[] allNotes = new Ewednevnik[] { ewednevnik, ewednevnik2 };
 
 
 
-            DateTime date = new DateTime(2022, 10, 13);
+            DateTime date = new DateTime(2022, 11, 09);
             Console.Clear();
             int position = 1;
             date13menu(allNotes);
@@ -51,24 +54,24 @@ namespace ewednevnik
                 }
                 else if (Key.Key == ConsoleKey.RightArrow)
                 {
-                    data14vibor();
+                    data2();
                 }
 
                 else if (Key.Key == ConsoleKey.Enter)
                 {
                     if (position == 1)
                     {
-                        vivod(allNotes[0], 13);
+                        vivod(allNotes[0], 09);
                     }
                     else if (position == 2)
                     {
-                        vivod(allNotes[1], 13);
+                        vivod(allNotes[1], 09);
                     }
                 }
 
             }
 
-            static void date1viborCycle(int position, Ewednevnik[] allNotes)
+           static void date1viborCycle(int position, Ewednevnik[] allNotes)
             {
                 Console.Clear();
                 date13menu(allNotes);
@@ -82,23 +85,23 @@ namespace ewednevnik
             throw new NotImplementedException();
         }
 
-        static void data14vibor()
+       public static void data2()
         {
             Ewednevnik ewednevnik = new Ewednevnik();
             ewednevnik.Name = "Сходить к врачу";
             ewednevnik.Description = "Педиатр в 18:00";
-            ewednevnik.Date = new DateTime(2022, 10, 14);
+            ewednevnik.Date = new DateTime(2022, 11, 28);
 
             Ewednevnik ewednevnik2 = new Ewednevnik();
             ewednevnik2.Name = "Выучить танец";
             ewednevnik2.Description = "Станцевать его на концерте";
-            ewednevnik2.Date = new DateTime(2022, 10, 14);
+            ewednevnik2.Date = new DateTime(2022, 11, 28);
 
             Ewednevnik[] allNotes = new Ewednevnik[] { ewednevnik, ewednevnik2 };
 
 
 
-            DateTime date = new DateTime(2022, 10, 14);
+            DateTime date = new DateTime(2022, 11, 28);
             Console.Clear();
             int position = 1;
             date14menu(allNotes);
@@ -108,17 +111,17 @@ namespace ewednevnik
                 if (Key.Key == ConsoleKey.UpArrow)
                 {
                     position--;
-                    date14viborCycle(position, allNotes);
+                    date2viborCycle(position, allNotes);
                 }
                 else if (Key.Key == ConsoleKey.DownArrow)
                 {
                     position++;
-                    date14viborCycle(position, allNotes);
+                    date2viborCycle(position, allNotes);
                 }
                 else if (Key.Key == ConsoleKey.RightArrow)
                 {
                     Console.Clear();
-                    data15vibor();
+                    data3();
                 }
                 else if (Key.Key == ConsoleKey.LeftArrow)
                 {
@@ -129,17 +132,17 @@ namespace ewednevnik
                 {
                     if (position == 1)
                     {
-                        vivod(allNotes[0], 14);
+                        vivod(allNotes[0], 28);
                     }
                     else if (position == 2)
                     {
-                        vivod(allNotes[1], 14);
+                        vivod(allNotes[1], 28);
                     }
                 }
 
             }
 
-            static void date14viborCycle(int position, Ewednevnik[] allNotes)
+            static void date2viborCycle(int position, Ewednevnik[] allNotes)
             {
                 Console.Clear();
                 date14menu(allNotes);
@@ -147,44 +150,44 @@ namespace ewednevnik
                 Console.WriteLine("-->");
             }
         }
-        static void data15vibor()
+       public static void data3()
         {
             Ewednevnik ewednevnik = new Ewednevnik();
             ewednevnik.Name = "Погулять";
             ewednevnik.Description = "С собакой";
-            ewednevnik.Date = new DateTime(2022, 10, 15);
+            ewednevnik.Date = new DateTime(2022, 11, 30);
 
             Ewednevnik ewednevnik2 = new Ewednevnik();
             ewednevnik2.Name = "Сделать домашку";
             ewednevnik2.Description = "Выучить КС";
-            ewednevnik2.Date = new DateTime(2022, 10, 15);
+            ewednevnik2.Date = new DateTime(2022, 11, 30);
 
             Ewednevnik[] allNotes = new Ewednevnik[] { ewednevnik, ewednevnik2 };
 
 
 
-            DateTime date = new DateTime(2022, 10, 15);
+            DateTime date = new DateTime(2022, 11, 30);
             int data = 15;
             Console.Clear();
             int position = 1;
-            date15menu(allNotes);
+            date13menu(allNotes);
             while (true)
             {
                 ConsoleKeyInfo Key = Console.ReadKey();
                 if (Key.Key == ConsoleKey.UpArrow)
                 {
                     position--;
-                    date15viborCycle(position, allNotes);
+                    date3viborCycle(position, allNotes);
                 }
                 else if (Key.Key == ConsoleKey.DownArrow)
                 {
                     position++;
-                    date15viborCycle(position, allNotes);
+                    date3viborCycle(position, allNotes);
                 }
                 else if (Key.Key == ConsoleKey.LeftArrow)
                 {
                     Console.Clear();
-                    data14vibor();
+                    data2();
                 }
 
                 else if (Key.Key == ConsoleKey.Enter)
@@ -201,7 +204,7 @@ namespace ewednevnik
 
             }
 
-            static void date15viborCycle(int position, Ewednevnik[] allNotes)
+            static void date3viborCycle(int position, Ewednevnik[] allNotes)
             {
                 Console.Clear();
                 date15menu(allNotes);
@@ -211,7 +214,7 @@ namespace ewednevnik
         }
         static void date13menu(Ewednevnik[] allNotes)
         {
-            Console.WriteLine("   Выбрана дата 13.10.2022");
+            Console.WriteLine("   Выбрана дата 09.11.2022");
             for (int i = 0; i < allNotes.Length; i++)
             {
                 Console.WriteLine("   " + allNotes[i].Name);
@@ -220,7 +223,7 @@ namespace ewednevnik
         static void date14menu(Ewednevnik[] allNotes)
         {
             {
-                Console.WriteLine("   Выбрана дата 14.10.2022");
+                Console.WriteLine("   Выбрана дата 28.11.2022");
                 for (int i = 0; i < allNotes.Length; i++)
                 {
                     Console.WriteLine("   " + allNotes[i].Name);
@@ -230,14 +233,14 @@ namespace ewednevnik
         static void date15menu(Ewednevnik[] allNotes)
         {
             {
-                Console.WriteLine("   Выбрана дата 15.10.2022");
+                Console.WriteLine("   Выбрана дата 30.11.2022");
                 for (int i = 0; i < allNotes.Length; i++)
                 {
                     Console.WriteLine("   " + allNotes[i].Name);
                 }
             }
         }
-        static void vivod(Ewednevnik ewednevnik, int date)
+       public  static void vivod(Ewednevnik ewednevnik, int date)
         {
 
 
@@ -254,11 +257,11 @@ namespace ewednevnik
                 }
                 if (date == 14)
                 {
-                    data14vibor();
+                    data2();
                 }
                 if (date == 15)
                 {
-                    data15vibor();
+                    data3();
                 }
             }
         }

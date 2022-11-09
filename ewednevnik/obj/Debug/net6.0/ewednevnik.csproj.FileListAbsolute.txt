@@ -1,0 +1,15 @@
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.csproj.AssemblyReference.cache
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.AssemblyInfoInputs.cache
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.AssemblyInfo.cs
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.csproj.CoreCompileInputs.cache
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\bin\Debug\net6.0\ewednevnik.exe
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\bin\Debug\net6.0\ewednevnik.deps.json
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\bin\Debug\net6.0\ewednevnik.runtimeconfig.json
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\bin\Debug\net6.0\ewednevnik.dll
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\bin\Debug\net6.0\ewednevnik.pdb
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.dll
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\refint\ewednevnik.dll
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.pdb
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ewednevnik.genruntimeconfig.cache
+C:\Users\Елизавета-ПК\source\repos\ewednevnik\ewednevnik\obj\Debug\net6.0\ref\ewednevnik.dll

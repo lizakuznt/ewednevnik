@@ -251,15 +251,15 @@ namespace ewednevnik
             ConsoleKeyInfo Key = Console.ReadKey();
             if (Key.Key == ConsoleKey.Escape)
             {
-                if (date == 13)
+                if (date == 09)
                 {
                     data1();
                 }
-                if (date == 14)
+                if (date == 28)
                 {
                     data2();
                 }
-                if (date == 15)
+                if (date == 30)
                 {
                     data3();
                 }
